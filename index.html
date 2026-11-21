@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Jonathan | Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 3rem 0 2rem;
+      border-bottom: 1px solid #30363d;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #f0f6fc;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #58a6ff;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      max-width: 720px;
+      color: #8b949e;
+      font-size: 1.05rem;
+    }
+
+    .skills {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-badge {
+      background: #161b22;
+      border: 1px solid #30363d;
+      color: #e6edf3;
+      padding: 0.3rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      color: #f0f6fc;
+      margin-bottom: 1.5rem;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: #58a6ff;
+      transform: translateY(-2px);
+    }
+
+    .card h3 {
+      color: #f0f6fc;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #8b949e;
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tag {
+      background: rgba(56, 139, 253, 0.15);
+      color: #58a6ff;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.55rem 1rem;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-primary {
+      background: #238636;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background: #2ea043;
+    }
+
+    .btn-secondary {
+      background: #21262d;
+      color: #c9d1d9;
+      border: 1px solid #30363d;
+    }
+
+    .btn-secondary:hover {
+      background: #30363d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Victor Jonathan</h1>
+      <p class="subtitle">Computer Science & Data Science Student</p>
+      <p class="bio">
+        Focused on Machine Learning, Computer Vision, and full-stack development. Building smart web prototypes and data-driven solutions.
+      </p>
+      <div class="skills">
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">TensorFlow / Keras</span>
+        <span class="skill-badge">Data Mining</span>
+        <span class="skill-badge">SQL</span>
+        <span class="skill-badge">HTML / CSS / JS</span>
+        <span class="skill-badge">Git & Vercel</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        
+        <div class="card">
+          <div>
+            <h3>ScanAI-Health</h3>
+            <p>Medical AI web prototype for identifying lung abnormalities from chest X-ray images using ResNet50 transfer learning and deep learning classification.</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">TensorFlow</span>
+              <span class="tag">ResNet50</span>
+              <span class="tag">Web Prototype</span>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="https://github.com/Twilight676799/ScanAI-Health" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repo</a>
+            <a href="https://scanai-health.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h3>NexusFlow</h3>
+            <p>Collaborative project focused on automated workflows and application integration built alongside engineering teammates.</p>
+            <div class="tags">
+              <span class="tag">Team Project</span>
+              <span class="tag">Web Application</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="btn-group">
+            <a href="https://github.com/wahyu688/animated-web-magic" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Repo</a>
+            <a href="https://dashboard-sofeng.online/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
